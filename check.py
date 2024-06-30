@@ -17,6 +17,7 @@ def send_pushover_notification(message):
         print("Pushover notification sent successfully.")
     else:
         print(f"Failed to send Pushover notification: {response.text}")
+        exit(1)
 
 
 def load_domains(file_path):
